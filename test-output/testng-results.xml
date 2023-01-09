@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-27T11:29:52 IST" name="Default suite" finished-at="2022-12-27T11:29:59 IST" duration-ms="7177">
+  <suite started-at="2023-01-06T01:03:03 IST" name="Parrallel Testing" finished-at="2023-01-06T01:03:03 IST" duration-ms="53">
     <groups>
     </groups>
-    <test started-at="2022-12-27T11:29:52 IST" name="Default test" finished-at="2022-12-27T11:29:59 IST" duration-ms="7177">
-      <class name="ExecuteClasses.ExecuteLoginPage">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ExecuteClasses.ExecuteLoginPage@c8c12ac]" started-at="2022-12-27T11:29:52 IST" name="beforeMethod" finished-at="2022-12-27T11:29:58 IST" duration-ms="5506" status="PASS">
+    <test started-at="2023-01-06T01:03:03 IST" name="My Test103" finished-at="2023-01-06T01:03:03 IST" duration-ms="51">
+      <class name="sampleTestNG.DependsOnTest">
+        <test-method signature="openBrowser()[pri:0, instance:sampleTestNG.DependsOnTest@436813f3]" started-at="2023-01-06T01:03:03 IST" name="openBrowser" finished-at="2023-01-06T01:03:03 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySuccessfulLogin()[pri:0, instance:ExecuteClasses.ExecuteLoginPage@c8c12ac]" started-at="2022-12-27T11:29:58 IST" name="verifySuccessfulLogin" finished-at="2022-12-27T11:29:59 IST" duration-ms="1309" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="signIn()[pri:0, instance:sampleTestNG.DependsOnTest@436813f3]" started-at="2023-01-06T01:03:03 IST" name="signIn" finished-at="2023-01-06T01:03:03 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySuccessfulLogin -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ExecuteClasses.ExecuteLoginPage@c8c12ac]" started-at="2022-12-27T11:29:59 IST" name="afterMethod" finished-at="2022-12-27T11:29:59 IST" duration-ms="326" status="PASS">
+        </test-method> <!-- signIn -->
+      </class> <!-- sampleTestNG.DependsOnTest -->
+    </test> <!-- My Test103 -->
+    <test started-at="2023-01-06T01:03:03 IST" name="My Test100" finished-at="2023-01-06T01:03:03 IST" duration-ms="53">
+      <class name="sampleTestNG.ParallelTest1">
+        <test-method signature="testa()[pri:0, instance:sampleTestNG.ParallelTest1@56620197]" started-at="2023-01-06T01:03:03 IST" name="testa" finished-at="2023-01-06T01:03:03 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- ExecuteClasses.ExecuteLoginPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testa -->
+        <test-method signature="testb()[pri:0, instance:sampleTestNG.ParallelTest1@56620197]" started-at="2023-01-06T01:03:03 IST" name="testb" finished-at="2023-01-06T01:03:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testb -->
+        <test-method signature="testc()[pri:0, instance:sampleTestNG.ParallelTest1@56620197]" started-at="2023-01-06T01:03:03 IST" name="testc" finished-at="2023-01-06T01:03:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testc -->
+      </class> <!-- sampleTestNG.ParallelTest1 -->
+    </test> <!-- My Test100 -->
+    <test started-at="2023-01-06T01:03:03 IST" name="My Test101" finished-at="2023-01-06T01:03:03 IST" duration-ms="51">
+      <class name="sampleTestNG.ParallelTest2">
+        <test-method signature="test21()[pri:0, instance:sampleTestNG.ParallelTest2@1189dd52]" started-at="2023-01-06T01:03:03 IST" name="test21" finished-at="2023-01-06T01:03:03 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test21 -->
+        <test-method signature="test22()[pri:0, instance:sampleTestNG.ParallelTest2@1189dd52]" started-at="2023-01-06T01:03:03 IST" name="test22" finished-at="2023-01-06T01:03:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test22 -->
+        <test-method signature="test23()[pri:0, instance:sampleTestNG.ParallelTest2@1189dd52]" started-at="2023-01-06T01:03:03 IST" name="test23" finished-at="2023-01-06T01:03:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test23 -->
+      </class> <!-- sampleTestNG.ParallelTest2 -->
+    </test> <!-- My Test101 -->
+  </suite> <!-- Parrallel Testing -->
 </testng-results>
